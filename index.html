@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Picsbymae</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <nav>
+            <div class="parent">
+        <div class="div1">ML</div>
+        <div class="div2"> </div>
+        <div class="div3"><a href="/html/galerie.html">Galerie</a></div>
+        <div class="div4"><a href="/html/tarifs.html">Tarifs</a></div>
+        <div class="div5"><a href="/html/contact.html">Contact</a></div>
+        </div>
+    </nav>
+
+    <div class="div6"> 
+        <img src="/images/Test1.png" alt="" width=100% class="parallax-img">
+    </div>
+
+
+    <div class="div7">Citation sur la photographie</div>
+
+    <div class="div8">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+    </div>
+
+    <div class="parent2">
+        <div class="div9"> 
+            <img src="/images/IMG_1624-2.jpg" alt=""width="100%" class="parallax-img">
+        </div>
+        <div class="div10">
+            <h1>Qui suis-je ?</h1>
+            <p id="texte-paragraphe-v1">Bonjour ! 
+               Je m'appelle Maelis et j'ai développé une passion pour la photographie depuis le début de mon adolescence. J'aime autant la prise de photographies que la post-production de ces dernières.<br>
+               Cela fait maintenant quelques mois que je me suis lancée officiellement dans la photographie.<br></p>
+            <p id="titre-paragraphe-v1">Bienvenue dans mon univers !
+            </p>
+        </div>
+        </div>
+
+    <div class="div7bis">
+        Suivez-moi sur Instagram<br>
+        <img src="/images/instagram-logo.png" alt="" width="30px" id="logo-insta">
+    </div>    
+
+<footer>
+    <div class="parent3">
+        <div class="div11">&copy;Maélis Lemoine</div>
+        <div class="div12"> </div>
+        <div class="div13"><a href="/html/politique-de-confidentialite.html">Politque de confidentialité</a></div>
+        <div class="div14"><a href="/html/cgv.html">CGV</a></div>
+        <div class="div15"><a href="/html/mentions-legales.html">Mentions Légales</a></div>
+        </div>
+</footer>
+
+
+
+        <!-- Inclure la librairie SimpleParallax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-parallax-js/5.6.2/simpleParallax.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Initialisation du parallax
+                const image = document.getElementsByClassName('parallax-img');
+                new simpleParallax(image, {
+                    scale: 1.2,           // Niveau de zoom
+                    delay: 1,            // Délai de l'animation
+                    transition: 'cubic-bezier(0,0,0,1)',  // Type de transition
+                    overflow: true        // Permet le débordement de l'image
+                });
+            });
+        </script>
+
 </body>
 </html>

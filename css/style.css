@@ -1,0 +1,231 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: 'Futura-Pt-book';
+    src: url(/fonts/FuturaCyrillicBook.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura-Pt-heavy';
+    src: url(/fonts/FuturaCyrillicHeavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Photograph-Signature';
+    src: url(/fonts/Photograph\ Signature.woff) format('woff');
+}
+
+nav{
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+    font-family: 'Photograph-Signature';
+    font-size: 64px;
+    color:black;
+    font-weight: 400;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: black;
+    height:100px;
+    color:white;
+    text-align: center;
+    align-items: center;
+    }
+        
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        font-family: 'Photograph-Signature';
+        font-size: 40px;
+}
+    .div2 { grid-area: 1 / 2 / 2 / 4; }
+    .div3 { 
+        grid-area: 1 / 4 / 2 / 5; 
+        font-family: 'Futura-Pt-book';
+        font-size: 24px;
+    }
+    .div4 { 
+        grid-area: 1 / 5 / 2 / 6; 
+        font-family: 'Futura-Pt-book';
+        font-size: 24px;
+    }
+    .div5 { 
+        grid-area: 1 / 6 / 2 / 7; 
+        font-family: 'Futura-Pt-book';
+        font-size: 24px;
+}
+    .div6 { grid-area: 2 / 1 / 7 / 7; 
+    background-color: black;}
+
+    .div6cgv {
+        background-color: white;
+        margin:150px;
+        font-family: 'Futura-Pt-book';
+        font-size: 20px;
+    }
+
+    #titre-paragraphe {
+        font-weight: 900;
+    }
+
+    #titre-paragraphe-v1 {
+        margin:10%;
+        font-family: 'Photograph-Signature';
+        font-size: 60px;
+        color: white;
+    }
+
+    #texte-paragraphe {
+        font-weight: 400;
+    }
+
+    #texte-paragraphe-v1 {
+        margin:10%;
+        font-family: 'Futura-Pt-book';
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+    }
+
+.div7 {
+    display: grid;
+    height: 600px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    align-items: center;
+    font-family: 'Photograph-Signature';
+    font-size: 128px;
+}
+
+.div7bis {
+    display: grid;
+    height: 600px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    align-items: center;
+    font-family: 'Photograph-Signature';
+    font-size: 64px;
+    justify-items: center;
+}
+
+.div8 {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    margin:100px;
+    background: white;
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width:100%;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    }
+    
+    .div9 { grid-area: 1 / 1 / 2 / 2; }
+    .div10 { grid-area: 1 / 2 / 2 / 3; 
+    }
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#titre-page {
+    color: black;
+    text-align: center;
+    margin: 100px;
+}
+
+.parent3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: black;
+    height: 100px;
+    color:white;
+    text-align: center;
+    align-items: end;
+    padding-bottom: 20px;
+    }
+        
+    .div11 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        text-align: left;
+        margin-left: 20px;
+        font-family: 'Photograph-Signature';
+        font-size: 20px;
+    }
+    .div12 { grid-area: 1 / 2 / 2 / 4; }
+    .div13 { 
+        grid-area: 1 / 4 / 2 / 5; 
+        font-family: 'Futura-Pt-book';
+        font-size: 12px;
+}
+    .div14 { 
+        grid-area: 1 / 5 / 2 / 6; 
+        font-family: 'Futura-Pt-book';
+        font-size: 12px;
+    }
+    .div15 { 
+        grid-area: 1 / 6 / 2 / 7; 
+        font-family: 'Futura-Pt-book';
+        font-size: 12px;
+    }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#a-cgv {
+    text-decoration: underline;
+}
+
+#a-contact {
+    text-decoration: underline;
+}
+
+#a-galerie {
+    text-decoration: underline;
+}
+
+#a-mentions {
+    text-decoration: underline;
+}
+
+#a-politique {
+    text-decoration: underline;
+}
+
+#a-tarifs {
+    text-decoration: underline;
+}
+
+#logo-insta {
+    margin-top: 0px;
+    align-items: center;
+    justify-items: center;
+}

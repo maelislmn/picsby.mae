@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" />
+    <title>Picsbymae - Galerie</title>
+</head>
+<body>
+    <nav>
+            <div class="parent">
+        <div class="div1"><a href="../index.html">ML</a></div>
+        <div class="div2"> </div>
+        <div class="div3"><a href="galerie.html" id="a-galerie">Galerie</a></div>
+        <div class="div4"><a href="tarifs.html">Tarifs</a></div>
+        <div class="div5"><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
+
+    <div class="div8">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+    </div>
+
+    <div class="div8">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+    </div>
+
+    <div class="div8">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+    </div>
+
+    <div class="div7bis">Suivez-moi sur Instagram</div>    
+
+<footer>
+    <div class="parent3">
+        <div class="div11">&copy;Maélis Lemoine</div>
+        <div class="div12"> </div>
+        <div class="div13"><a href="politique-de-confidentialite.html">Politque de confidentialité</a></div>
+        <div class="div14"><a href="cgv.html">CGV</a></div>
+        <div class="div15"><a href="mentions-legales.html">Mentions Légales</a></div>
+        </div>
+</footer>
+
+        <!-- Inclure la librairie SimpleParallax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-parallax-js/5.6.2/simpleParallax.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Initialisation du parallax
+                const image = document.getElementsByClassName('parallax-img');
+                new simpleParallax(image, {
+                    scale: 1.2,           // Niveau de zoom
+                    delay: 1,            // Délai de l'animation
+                    transition: 'cubic-bezier(0,0,0,1)',  // Type de transition
+                    overflow: true        // Permet le débordement de l'image
+                });
+            });
+        </script>
+
+</body>
+</html>
