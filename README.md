@@ -1,2 +1,2 @@
-# creative-coding-parallax-1
-Creative Coding - Parallax 1
+# creative-coding-parallax
+Creative Coding - Parallax
