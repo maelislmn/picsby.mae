@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Picsbymae</title>
 </head>
 <body>
     <nav>
             <div class="parent">
-        <div class="div1">ML</div>
+        <div class="div1"><a href="index.html">ML</a></div>
         <div class="div2"> </div>
         <div class="div3"><a href="/html/galerie.html">Galerie</a></div>
         <div class="div4"><a href="/html/tarifs.html">Tarifs</a></div>
@@ -22,13 +24,27 @@
     </div>
 
 
-    <div class="div7">Citation sur la photographie</div>
+    <div class="div7">"Vous ne prenez pas une photographie, vous la créez." <br>– Ansel Adams</div>
 
-    <div class="div8">
-        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
-        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
-        <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
-    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/images/IMG_2368.JPG" alt="" class="parallax-img">
+            <img src="/images/IMG_2959.JPG" alt="" class="parallax-img">
+            <img src="/images/IMG_2700.JPG" alt="" class="parallax-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/IMG_1694.JPG" alt="" class="parallax-img">
+            <img src="/images/IMG_2365.JPG" alt="" class="parallax-img">
+            <img src="/images/IMG_2958.JPG" alt="" class="parallax-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/IMG_2964.JPG" alt="" class="parallax-img">
+            <img src="/images/IMG_4325.JPG" alt="" class="parallax-img">
+            <img src="/images/IMG_2364.JPG" alt="" class="parallax-img">
+          </div>
+        </div>
+    </div>    
 
     <div class="parent2">
         <div class="div9"> 
@@ -37,8 +53,8 @@
         <div class="div10">
             <h1>Qui suis-je ?</h1>
             <p id="texte-paragraphe-v1">Bonjour ! 
-               Je m'appelle Maelis et j'ai développé une passion pour la photographie depuis le début de mon adolescence. J'aime autant la prise de photographies que la post-production de ces dernières.<br>
-               Cela fait maintenant quelques mois que je me suis lancée officiellement dans la photographie.<br></p>
+               Je m'appelle Maelis et j'ai developpe une passion pour la photographie depuis le debut de mon adolescence. J'aime autant la prise de photographies que la post-production de ces dernieres.<br>
+               Cela fait maintenant quelques mois que je me suis lancee officiellement dans la photographie.<br></p>
             <p id="titre-paragraphe-v1">Bienvenue dans mon univers !
             </p>
         </div>
@@ -46,7 +62,7 @@
 
     <div class="div7bis">
         Suivez-moi sur Instagram<br>
-        <img src="/images/instagram-logo.png" alt="" width="30px" id="logo-insta">
+        <a href="https://www.instagram.com/picsby.mae/#" target="_blank"><img src="/images/instagram_f_icon-icons.com_65485.svg" alt="" width="50px" id="logo-insta"></a>
     </div>    
 
 <footer>
@@ -76,6 +92,25 @@
                 });
             });
         </script>
+
+        <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 45,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
 </body>
 </html>
